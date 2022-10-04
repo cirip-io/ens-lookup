@@ -1,0 +1,8 @@
+name = "ens"
+type = "webpack"
+
+account_id = "59f84e3aee5778fd587156246a4de135"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2022-10-04"
