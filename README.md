@@ -1,15 +1,24 @@
-# 👷 `worker-template` Hello World
+# ENS Reverse Lookup Cloudflare Worker
 
-A template for kick starting a Cloudflare worker project.
+Reverse resolution in ENS - the process of mapping from an Ethereum address (eg, 0x1234...)
 
-[`index.js`](https://github.com/cloudflare/worker-template/blob/master/index.js) is the content of the Workers script.
+### Usage
+Simply use a valid ENS Cirip URL to receive the ens informations:
 
-#### Wrangler
-
-To generate using [wrangler](https://github.com/cloudflare/wrangler)
-
+GET
 ```
-wrangler generate projectname https://github.com/cloudflare/worker-template
+https://ens.cirip.io/0xeF8305E140ac520225DAf050e2f71d5fBcC543e7
 ```
-
-Further documentation for Wrangler can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler).
+RESPONSE
+```
+{
+  "reverseRecord": "fabien.eth",
+  "domains": [
+    "fabien.eth",
+    "textcoin.eth",
+    "fabien.sismo.eth",
+    "snapback.eth",
+    "devcondemo.eth"
+  ]
+}
+```
